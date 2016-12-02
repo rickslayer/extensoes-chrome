@@ -74,6 +74,9 @@ function save_options() {
     var ativaback    = document.getElementById('ativar-back').checked;
     var ativatamanho = document.getElementById('ativar-tamanho').checked;
     var ativabotaosobe = document.getElementById('add-bota-inicio-fim').checked;
+    var corfonteselecionada = $("#cor-fonte-selecionada").val();
+    var corfundoselecionado = $("#cor-fundo-selecionado").val();
+    var ativacorfundo = $("#ativar-cor-fundo").val();
       chrome.storage.sync.set({
              corFonte: colore,
              corBack: corback,
@@ -82,7 +85,11 @@ function save_options() {
              ativaFonte: ativafonte,
              ativaBack: ativaback,
              ativaTamanho: ativatamanho,
-             ativaBotaSobe: ativabotaosobe
+             ativaBotaSobe: ativabotaosobe,
+             ativaCorFundo: ativacorfundo,
+             corFonteSelecionada: corfonteselecionada,
+             corFundoSelecionado: corfundoselecionado
+
   }, function() {
 
            var status = document.getElementById('status');
@@ -100,10 +107,13 @@ function restore_options() {
             corBack: '#FFFFFF',
             tamanhoFonte: '15px',
             removeImagem: true,
-            ativaFonte: true,
-            ativaBack : true,
-            ativaTamanho : true,
-            ativaBotaSobe : true
+            ativaFonte: false,
+            ativaBack : false,
+            ativaTamanho : false,
+            ativaBotaSobe : false,
+            ativaCorFundo: false,
+            corFonteSelecionada: '#FFFFFF',
+            corFundoSelecionado: '#000000'
 
   }, function(items) {
 
@@ -115,6 +125,9 @@ function restore_options() {
               document.getElementById('ativar-back').checked     = items.ativaBack;
               document.getElementById('ativar-tamanho').checked  = items.ativaTamanho;
               document.getElementById('add-bota-inicio-fim').checked = items.ativaBotaSobe;
+             $("#cor-fonte-selecionada").val(items.corFonteSelecionada);
+             $("#cor-fundo-selecionado").val(items.corFundoSelecionado);
+             $("#ativar-cor-fundo").val(items.ativaCorFundo);
 
                 if(!items.ativaFonte){
                      $("#cores-fonte").attr("disabled", true);
@@ -131,6 +144,13 @@ function restore_options() {
                 if(!items.ativaTamanho){
                      $("#tamanhoFonte").attr("disabled", true);
                      $("#tamanhoDosTextos").addClass("cinza");
+                }
+
+                if(!items.ativaCorFundo){
+                   $("#cor-fonte-selecionada").attr("disabled", true);
+                   $("#lbl-cor-fonte-selecionada").addClass("cinza");
+                   $("#cor-fundo-selecionado").attr("disabled", true);
+                   $("#lbl-cor-fundo-selecionado").addClass("cinza");
                 }
 
               });
@@ -151,17 +171,19 @@ function reset_options(){
     document.getElementById('cores-back').value       = "#FFFFFF";
     document.getElementById('tamanhoFonte').value     = "20px";
     document.getElementById('remove-img').checked     = false;
-    document.getElementById('ativar-fonte').checked   = true;
-    document.getElementById('ativar-back').checked    = true;
-    document.getElementById('ativar-tamanho').checked = true;
+    document.getElementById('ativar-fonte').checked   = false;
+    document.getElementById('ativar-back').checked    = false;
+    document.getElementById('ativar-tamanho').checked = false;
     document.getElementById('add-bota-inicio-fim').checked = false;
-
+     $("#ativar-cor-fundo").checked = false;
      $("#cores-back").attr("disabled", false);
      $("#corDoBack").removeClass("cinza");
      $("#cores-fonte").attr("disabled", false);
      $("#corDaFonte").removeClass("cinza");
      $("#tamanhoFonte").attr("disabled", false);
      $("#tamanhoDosTextos").removeClass("cinza");
+     $("#lbl-cor-fonte-selecionada").addClass("cinza");
+     $("#lbl-cor-fundo-selecionado").addClass("cinza");
 
 }
 setTimeout(function(){
