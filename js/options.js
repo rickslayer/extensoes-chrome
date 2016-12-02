@@ -43,9 +43,13 @@ $(document).ready(function(){
               if(_ativaCorFundo == 1){
                    $("#cor-fonte-selecionada").attr("disabled", false);
                    $("#cor-fundo-selecionado").attr("disabled", false);
+                   $("#cor-fonte-selecionada").val("#FFFFFF");
+                   $("#cor-fundo-selecionado").val("#000000");
                    $("#lbl-cor-fonte-selecionada").removeClass("cinza");
                    $("#lbl-cor-fundo-selecionado").removeClass("cinza");
               }else{
+                   $("#cor-fonte-selecionada").val("#DDDDDD");
+                   $("#cor-fundo-selecionado").val("#DDDDDD");
                    $("#cor-fonte-selecionada").attr("disabled", true);
                    $("#lbl-cor-fonte-selecionada").addClass("cinza");
                    $("#cor-fundo-selecionado").attr("disabled", true);
