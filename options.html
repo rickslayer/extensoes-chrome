@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Configuration Acessibilidade</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Paulo Ricardo Rube de Almeida" />
+    <meta name="copyright" content="Copyright Paulo Ricardo Rube de Almeida 2016. All Rights Reserved." />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+     <script type="text/javascript" src="js/options.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" scr="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="options.css">
+    <link type="image/ico" rel="icon" href="img/icon32.png">
+</head>
+<body>
+<div class="container tamanhoPrincipal">
+        <h1 class="text-center">Configurações de Acessibilidade</h1>
+        <img src="img/logo.png" id=logo class="img-responsive center-block" alt="Logomarca" title="Logo do site" />
+        <hr/>
+        <div class="row pad">
+              <div class="col-md-4">
+                 <label id="corDaFonte">Cor da Fonte</label>
+              </div>
+              <div class="col-md-4">
+                  <input type="color" id="cores-fonte" title="clique para mudar a cor" value="#000000" />
+              </div>
+              <div class="col-md-4">
+                  <input type="checkbox" id="ativar-fonte"  checked>   <span>Ativar</span>
+              </div>
+        </div>
+          <hr/>
+         <div class="row pad">
+              <div class="col-md-4">
+                  <label id="corDoBack"> Cor do Fundo</label>
+              </div>
+               <div class="col-md-4">
+                  <input type="color" id="cores-back" title="clique para mudar a cor" value="#FFFFFF" />
+              </div>
+              <div class="col-md-4">
+                  <input type="checkbox" id="ativar-back" checked>   <span>Ativar</span>
+              </div>
+         </div>
+           <hr/>
+          <div class="row pad">
+              <div class="col-md-3">
+                  <label>Cores ao selecionar texto</label>
+
+              </div>
+              <div class="col-md-3">
+                  <label id="lbl-cor-fonte-selecionada">Cor da fonte</label>
+                  <input type="color" id="cor-fonte-selecionada" title="clique para mudar a cor" value="#FFFFFF" />
+              </div>
+              <div class="col-md-3">
+                  <label id="lbl-cor-fundo-selecionado">Cor do fundo</label>
+                  <input type="color" id="cor-fundo-selecionado" title="clique para mudar a cor" value="#000000" />
+              </div>
+              <div class="col-md-3">
+                   <input type="checkbox" id="ativar-cor-fundo" checked>   <span>Ativar</span>
+              </div>
+          </div>
+           <hr/>
+         <div class="row pad">
+            <div class="col-md-4">
+                  <label id="tamanhoDosTextos">Tamanho dos textos</label>
+            </div>
+                  <div class="col-md-4">
+                     <select id="tamanhoFonte">
+                            <option value="10px"> 10 </option>
+                            <option value="15px"> 15 </option>
+                            <option value="20px" selected> 20 </option>
+                            <option value="25px"> 25 </option>
+                            <option value="30px"> 30 </option>
+                            <option value="35px"> 35 </option>
+                            <option value="40px"> 40 </option>
+                            <option value="45px"> 45 </option>
+                            <option value="50px"> 50 </option>
+                      </select>
+                     </div>
+               <div class="col-md-4">
+                  <input type="checkbox" id="ativar-tamanho" checked>   <span>Ativar</span>
+              </div>
+         </div>
+           <hr/>
+         <div class="row pad">
+                <div class="col-md-4">
+                     <label>Remover todas as imagens</label>
+                </div>
+                <div class="col-md-8">
+                     <input type="checkbox" id="remove-img">
+                </div>
+          </div>
+     <hr/>
+          <div class="row pad">
+                <div class="col-md-4">
+                     <label>Botão de Inicio ao fim</label>
+                </div>
+                <div class="col-md-8">
+                     <input type="checkbox" id="add-bota-inicio-fim">
+                </div>
+          </div>
+     <hr/>
+          <div class="row pad">
+                  <button id="save" class="btn btn-default" role="button">Salvar</button>
+                  <button id="reset" class="btn btn-default" role="button">Voltar Padrão</button>
+                  <div id="status" class="pad"></div>
+          </div>
+</div>
+
+</body>
+</html>
