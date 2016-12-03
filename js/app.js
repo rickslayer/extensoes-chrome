@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
      restore_options();
-$('head').append('<style>::-moz-selection { color: yellow; background: red;}::selection { color: yellow; background: red;}</style>');
+
 
           });
 function restore_options() {
@@ -13,7 +13,10 @@ function restore_options() {
                 ativaFonte: true,
                 ativaBack : true,
                 ativaTamanho : true,
-                ativaBotaSobe : true
+                ativaBotaSobe : true,
+                ativaCorFundo: false,
+                corFonteSelecionada: '#FFFFFF',
+                corFundoSelecionado: '#000000'
   }, function(items) {
                 _corFonte     = items.corFonte;
                 _corBack      = items.corBack;
@@ -23,6 +26,9 @@ function restore_options() {
                 _ativaBack    = items.ativaBack;
                 _ativaTamanho = items.ativaTamanho;
                 _ativaBotaSobe = items.ativaBotaSobe;
+                _ativaCorFundo = items.ativaCorFundo;
+                _corFonteSelecionada = items.corFonteSelecionada;
+                _corFundoSelecionado = items.corFundoSelecionado;
 
   if (_removeImagem){
             var img =  $(document).find('img');
@@ -38,8 +44,11 @@ function restore_options() {
                ativaBack(_corBack, _ativaBack);
 
                ativaTamanho(_tamanhoFonte, _ativaTamanho);
+               console.log(_ativaCorFundo, _corFonteSelecionada, _corFundoSelecionado);
+               ativaCorFundo(_ativaCorFundo, _corFonteSelecionada, _corFundoSelecionado);
 });
 }
+
 function ativaFonte(ativaFonte, corFonte){
 
                _ativaFonte = ativaFonte;
@@ -120,5 +129,18 @@ function ativaBotaSobe(ativaSobe){
                $('body').append('<div id=\"_inicioPagina\"></div>');
                $('body').prepend($("#_inicioPagina"));
         }
+}
+
+
+function ativaCorFundo(ativaCorFundo, fonteSelecionada, fundoSelecionado){
+
+                _ativaCorFundo = ativaCorFundo;
+                _corFonteSelecionada = fonteSelecionada;
+                _corFundoSelecionado = fundoSelecionado;
+
+                if(_ativaCorFundo){
+                  $('head').append('<style>::-moz-selection { color: '+_corFonteSelecionada+'; background: '+_corFundoSelecionado+';}::selection { color: '+_corFonteSelecionada+'; background: '+_corFundoSelecionado+';}</style>');
+
+                }
 }
 

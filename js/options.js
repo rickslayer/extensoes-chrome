@@ -39,7 +39,7 @@ $(document).ready(function(){
 
       });
       $("#ativar-cor-fundo").on("change", function(){
-            var _ativaCorFundo = $("#ativar-cor-fundo:checked").length;
+                  var _ativaCorFundo = $("#ativar-cor-fundo:checked").length;
               if(_ativaCorFundo == 1){
                    $("#cor-fonte-selecionada").attr("disabled", false);
                    $("#cor-fundo-selecionado").attr("disabled", false);
@@ -76,7 +76,7 @@ function save_options() {
     var ativabotaosobe = document.getElementById('add-bota-inicio-fim').checked;
     var corfonteselecionada = $("#cor-fonte-selecionada").val();
     var corfundoselecionado = $("#cor-fundo-selecionado").val();
-    var ativacorfundo = $("#ativar-cor-fundo").val();
+    var ativacorfundo = $("#ativar-cor-fundo").is(':checked');
       chrome.storage.sync.set({
              corFonte: colore,
              corBack: corback,
@@ -125,9 +125,9 @@ function restore_options() {
               document.getElementById('ativar-back').checked     = items.ativaBack;
               document.getElementById('ativar-tamanho').checked  = items.ativaTamanho;
               document.getElementById('add-bota-inicio-fim').checked = items.ativaBotaSobe;
-             $("#cor-fonte-selecionada").val(items.corFonteSelecionada);
-             $("#cor-fundo-selecionado").val(items.corFundoSelecionado);
-             $("#ativar-cor-fundo").val(items.ativaCorFundo);
+              document.getElementById('cor-fonte-selecionada').value = items.corFonteSelecionada;
+              document.getElementById('cor-fundo-selecionado').value = items.corFundoSelecionado;
+              document.getElementById('ativar-cor-fundo').checked = items.ativaCorFundo;
 
                 if(!items.ativaFonte){
                      $("#cores-fonte").attr("disabled", true);
@@ -175,7 +175,7 @@ function reset_options(){
     document.getElementById('ativar-back').checked    = false;
     document.getElementById('ativar-tamanho').checked = false;
     document.getElementById('add-bota-inicio-fim').checked = false;
-     $("#ativar-cor-fundo").checked = false;
+     $("#ativar-cor-fundo").prop('checked', false);
      $("#cores-back").attr("disabled", false);
      $("#corDoBack").removeClass("cinza");
      $("#cores-fonte").attr("disabled", false);
