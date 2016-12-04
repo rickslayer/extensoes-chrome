@@ -37,15 +37,17 @@ function restore_options() {
             frame.removeAttr('src');
          }
 
-              ativaBotaSobe(_ativaBotaSobe);
+               ativaCorFundo(_ativaCorFundo, _corFonteSelecionada, _corFundoSelecionado);
+
+               ativaBotaSobe(_ativaBotaSobe);
 
                ativaFonte(_ativaFonte, _corFonte);
 
                ativaBack(_corBack, _ativaBack);
 
                ativaTamanho(_tamanhoFonte, _ativaTamanho);
-               console.log(_ativaCorFundo, _corFonteSelecionada, _corFundoSelecionado);
-               ativaCorFundo(_ativaCorFundo, _corFonteSelecionada, _corFundoSelecionado);
+
+
 });
 }
 
@@ -67,7 +69,32 @@ function ativaFonte(ativaFonte, corFonte){
               var ul     = $(document).find('ul');
               var i      = $(document).find('i');
               var strong =  $(document).find('strong');
-
+              var _Style = $(document).find('style').length;
+              var select = $(document).find('select');
+              var input = $(document).find('input');
+              var btn = $(document).find('button');
+              if (_Style == 0){
+                  $('head').prepend('<style></style>');
+                  $('style').append('.cor{color: '+_corFonte+'}');
+              }
+              if(_Style > 0){
+                $('style').append('.cor{color: '+_corFonte+'}');
+              }
+              btn.addClass("cor");
+              select.addClass("cor");
+              input.addClass("cor");
+              h1.addClass("cor");
+              h2.addClass("cor");
+              h3.addClass("cor");
+              h4.addClass("cor");
+              p.addClass("cor");
+              span.addClass("cor");
+              a.addClass("cor");
+              b.addClass("cor");
+              li.addClass("cor");
+              ul.addClass("cor");
+              i.addClass("cor");
+              strong.addClass("cor");
               h1.css({'color':_corFonte});
               h2.css({'color':_corFonte});
               h3.css({'color':_corFonte});
@@ -123,7 +150,7 @@ function ativaBotaSobe(ativaSobe){
         _ativaBotao = ativaSobe;
 
         if(_ativaBotao){
-               $('body').append('<div id=\"dinamica\" class=\"fantasma\"><div class=\"pad\"><a href="#_inicioPagina">Inicio</a><div><div class=\"pad\"><a href="#_finalPagina">Fim</a></div>');
+               $('body').append('<div id=\"dinamica\" class=\"fantasma\"><div class=\"pad\"><a accesskey="1" href="#_inicioPagina" class=\"botaoSobeDesce\" title="Ir para o inicio da página">[1] Inicio</a><div><div class=\"pad\"><a accesskey="2" href="#_finalPagina" class=\"botaoSobeDesce\" title="Ir para o fim da página">[2] Fim</a></div>');
                $('body').prepend($("#dinamica"));
                $('body').append('<div id=\"_finalPagina\"></div>');
                $('body').append('<div id=\"_inicioPagina\"></div>');
@@ -140,7 +167,6 @@ function ativaCorFundo(ativaCorFundo, fonteSelecionada, fundoSelecionado){
 
                 if(_ativaCorFundo){
                   $('head').append('<style>::-moz-selection { color: '+_corFonteSelecionada+'; background: '+_corFundoSelecionado+';}::selection { color: '+_corFonteSelecionada+'; background: '+_corFundoSelecionado+';}</style>');
-
                 }
 }
 

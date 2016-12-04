@@ -175,6 +175,8 @@ function reset_options(){
     document.getElementById('ativar-back').checked    = false;
     document.getElementById('ativar-tamanho').checked = false;
     document.getElementById('add-bota-inicio-fim').checked = false;
+    document.getElementById('cor-fonte-selecionada').value = "#FFFFFF";
+    document.getElementById('cor-fundo-selecionado').value = "#000000";
      $("#ativar-cor-fundo").prop('checked', false);
      $("#cores-back").attr("disabled", false);
      $("#corDoBack").removeClass("cinza");

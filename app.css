@@ -10,7 +10,7 @@
         color: black;
         background:white;
         border: 1px solid black;
-        width: 50px;
+        width: 150px;
         text-align: center;
         float: right;
         position: fixed;
@@ -22,3 +22,11 @@
 .pad{
     padding: 10px;
 }
+
+.botaoSobeDesce {
+    color: black;
+    font-size: 15px;
+    padding: 5px;
+    font-weight: bold;
+}
+
