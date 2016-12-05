@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "Acessibility for All",
+    "description": "Transform Standards Website with this powerfull extension."
+  },
+  "appDesc": {
+    "message": "Extension to improve the accessibility of any website.",
+    "description":"Extension aimed at people with low vision, color blindness or any problem that hinders the visibility of a website.
+The extension configures fonts, background, images so that it stays as you set it on the options screen."
+  }
+}

@@ -1,11 +1,12 @@
 {
-   "name": "Acessibilidade para todos",
-   "short_name": "Deixe o seu site preferido com sua cara",
+  "name": "Acessibilidade para todos",
+   "default_locale": "pt_BR",
+  "short_name": "Deixe o seu site preferido com sua cara",
   "version": "1.1",
-   "manifest_version": 2,
-   "description": "Extensao que transforma sites comuns em acessiveis seguindo diretrizes do W3C",
+  "manifest_version": 2,
+  "description": "Extensao que transforma sites comuns em acessiveis seguindo diretrizes do W3C",
   "browser_action": {
-    "default_icon": {
+  "default_icon": {
             "16": "img/icon16.png",
             "24": "img/icon24.png",
             "32": "img/icon32.png"
