@@ -111,14 +111,14 @@ function restore_options() {
             corFonte: '#000000',
             corBack: '#FFFFFF',
             tamanhoFonte: '15px',
-            removeImagem: true,
+            removeImagem: false,
             ativaFonte: false,
             ativaBack : false,
             ativaTamanho : false,
             ativaBotaSobe : false,
             ativaCorFundo: false,
-            corFonteSelecionada: '#FFFFFF',
-            corFundoSelecionado: '#000000'
+            corFonteSelecionada: '#DDDDDD',
+            corFundoSelecionado: '#DDDDDD'
 
   }, function(items) {
 
