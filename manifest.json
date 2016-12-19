@@ -4,12 +4,8 @@
   "short_name": "Deixe o seu site preferido com sua cara",
   "version": "1.1.1",
   "manifest_version": 2,
-<<<<<<< HEAD
   "description": "__MSG_appDesc__",
-=======
-  "description": "Extensao que transforma sites comuns em acessiveis seguindo diretrizes do W3C",
 
->>>>>>> origin/master
   "browser_action": {
   "default_icon": {
             "16": "img/icon16.png",

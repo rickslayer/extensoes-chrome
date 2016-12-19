@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "appName": {
     "message": "Acessibilidade para todos",
@@ -19,15 +18,3 @@ A extensão configura fontes, background, imagens para que fique conforme você 
     "message": "Clique para mudar a cor"
   }
 }
-=======
-  {
-     "application_title": {
-       "message": "Acessibilidade para todos",
-       "description": "Extensao que transforma sites comuns em acessiveis seguindo diretrizes do W3C."
-     },
-     "application_description": {
-       "message": "Extensao para melhorar a acessibilidade de qualquer site.",
-       "description": "Extensao voltada para pessoas com baixa visao, daltonicos ou qualquer problema que dificulte a visibilidade de um site. A extensao configura fontes, background, imagens para que fique conforme você configurar na tela de opcoes."
-     }
-  }
->>>>>>> origin/master

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "appName": {
     "message": "Acessibility for All",
@@ -19,15 +18,3 @@ The extension configures fonts, background, images so that it stays as you set i
     "message": "Click to change forecolor"
   }
 }
-=======
-  {
-     "application_title": {
-       "message": "Acessibility for All",
-       "description": "Transform Standards Website with this powerfull extension."
-     },
-     "application_description": {
-       "message": "Extension to improve the accessibility of any website.",
-       "description": "Extension aimed at people with low vision, color blindness or any problem that hinders the visibility of a website."
-     }
-  }
->>>>>>> origin/master
