@@ -1,0 +1,22 @@
+{
+  "appName": {
+    "message": "Accesibilidad para todos",
+    "description": "Girar sitios con esta poderosa extensión"
+  },
+  "appDesc": {
+    "message": "Extension para mejorar la accesibilidad de cualquier sitio.",
+    "description":"Extensión orientada a las personas con baja visión, ceguera al color o cualquier problema que dificulta la visibilidad de un sitio web.
+La extensión ajusta suministros, fondo, imágenes para que sea lo que configura la pantalla de opciones"
+  },
+  "fontSize":{
+        "message": "Font Size"
+  },
+  "fontColor":{
+        "message":"Forecolor"
+  }
+  ,
+  "fontColorTitle":{
+    "message": "Clic para cambiar el color de la fuente"
+  }
+
+}

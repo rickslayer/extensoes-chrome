@@ -7,5 +7,14 @@
     "message": "Extensao para melhorar a acessibilidade de qualquer site.",
     "description":"Extensão voltada para pessoas com baixa visão, daltônicos ou qualquer problema que dificulte a visibilidade de um site.
 A extensão configura fontes, background, imagens para que fique conforme você configurar na tela de opções.."
+  },
+    "fontSize":{
+        "message": "Tamanho dos textos"
+  },
+  "fontColor":{
+        "message":"Cor da Fonte"
+  },
+    "fontColorTitle":{
+    "message": "Clique para mudar a cor"
   }
 }

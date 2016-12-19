@@ -1,5 +1,10 @@
 $(document).ready(function(){
 
+$("h1").text(chrome.i18n.getMessage("appName"));
+$("#tamanhoDosTextos").text(chrome.i18n.getMessage("fontSize"));
+$("#corDaFonte").text(chrome.i18n.getMessage("fontColor"));
+$("#cores-fonte").attr("title", chrome.i18n.getMessage("fontColorTitle"));
+
   restore_options();
 
   $("#ativar-fonte").on("change", function(){
