@@ -15,6 +15,34 @@ The extension configures fonts, background, images so that it stays as you set i
         "message":"Forecolor"
   },
   "fontColorTitle":{
-    "message": "Click to change forecolor"
-  }
+    "message": "Click to change color"
+  },
+  "ativarCampo":{
+    "message": "Enable"
+  },
+  "backgroundColor":{
+     "message": "Background"
+  },
+"high":{
+  "message": "Highlight text"
+},
+"removeimg":{
+  "message":"Remove all images (almost)"
+},
+"iniciofim":{
+  "message":"Button to up and down"
+},
+"salva":{
+  "message":"Save"
+},
+"reset":{
+  "message":"Reset options"
+},
+"sobe":{
+       "message":"Home"
+},
+"desce":{
+      "message":"End"
+}
+
 }

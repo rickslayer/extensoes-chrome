@@ -148,9 +148,17 @@ function ativaTamanho(tamanhoFonte, ativaTamanho){
 }
 function ativaBotaSobe(ativaSobe){
         _ativaBotao = ativaSobe;
+        var inicio  = chrome.i18n.getMessage("sobe");
+        var fim     = chrome.i18n.getMessage("desce");
+        if (inicio == ""){
+          inicio = "Inicio";
+        }
+        if (fim == ""){
+           fim = "Fim";
+        }
 
         if(_ativaBotao){
-               $('body').append('<div id=\"dinamica\" class=\"fantasma\"><div class=\"pad\"><a accesskey="1" href="#_inicioPagina" class=\"botaoSobeDesce\" title="Ir para o inicio da página">[1] Inicio</a><div><div class=\"pad\"><a accesskey="2" href="#_finalPagina" class=\"botaoSobeDesce\" title="Ir para o fim da página">[2] Fim</a></div>');
+               $('body').append('<div id=\"dinamica\" class=\"fantasma\"><div class=\"pad\"><a accesskey="1" href="#_inicioPagina" class=\"botaoSobeDesce\" title="Ir para o inicio da página">[1]'+inicio+'</a><div><div class=\"pad\"><a accesskey="2" href="#_finalPagina" class=\"botaoSobeDesce\" title="Ir para o fim da página">[2] '+fim+'</a></div>');
                $('body').prepend($("#dinamica"));
                $('body').append('<div id=\"_finalPagina\"></div>');
                $('body').append('<div id=\"_inicioPagina\"></div>');

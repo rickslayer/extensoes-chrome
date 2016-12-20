@@ -2,9 +2,15 @@ $(document).ready(function(){
 
 $("h1").text(chrome.i18n.getMessage("appName"));
 $("#tamanhoDosTextos").text(chrome.i18n.getMessage("fontSize"));
-$("#corDaFonte").text(chrome.i18n.getMessage("fontColor"));
-$("#cores-fonte").attr("title", chrome.i18n.getMessage("fontColorTitle"));
-
+$("#corDaFonte , #lbl-cor-fonte-selecionada").text(chrome.i18n.getMessage("fontColor"));
+$("#cores-fonte, #cores-back, #cor-fonte-selecionada, #cor-fundo-selecionado").attr("title", chrome.i18n.getMessage("fontColorTitle"));
+$("#corDoBack , #lbl-cor-fundo-selecionado").text(chrome.i18n.getMessage("backgroundColor"));
+$(document).find("span").text(chrome.i18n.getMessage("ativarCampo"));
+$("#ligth").text(chrome.i18n.getMessage("high"));
+$("#remove-imagem").text(chrome.i18n.getMessage("removeimg"));
+$("#btn-iniciofim").text(chrome.i18n.getMessage("iniciofim"));
+$("#save").text(chrome.i18n.getMessage("salva"));
+$("#reset").text(chrome.i18n.getMessage("reset"));
   restore_options();
 
   $("#ativar-fonte").on("change", function(){

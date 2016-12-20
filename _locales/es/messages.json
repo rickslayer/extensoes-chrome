@@ -17,6 +17,26 @@ La extensión ajusta suministros, fondo, imágenes para que sea lo que configura
   ,
   "fontColorTitle":{
     "message": "Clic para cambiar el color de la fuente"
-  }
-
+  },
+  "ativarCampo":{
+    "message": "Activa"
+  },
+  "backgroundColor":{
+     "message": "Background"
+  },
+"high":{
+  "message": "Highlight text"
+},
+"removeimg":{
+  "message":"Remove las imagénes"
+},
+"iniciofim":{
+  "message":"Botón de inicio y fin"
+},
+"salva":{
+  "message":"Salva"
+},
+"reset":{
+  "message":"Reiniciar opciones"
+}
 }
