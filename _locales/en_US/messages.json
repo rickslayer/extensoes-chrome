@@ -5,8 +5,7 @@
   },
   "appDesc": {
     "message": "Extension to improve the accessibility of any website.",
-    "description":"Extension aimed at people with low vision, color blindness or any problem that hinders the visibility of a website.
-The extension configures fonts, background, images so that it stays as you set it on the options screen."
+    "description":"Extension aimed at people with low vision, color blindness or any problem that hinders the visibility of a website.The extension configures fonts, background, images so that it stays as you set it on the options screen."
   },
   "fontSize":{
         "message": "Font Size"
@@ -16,5 +15,26 @@ The extension configures fonts, background, images so that it stays as you set i
   },
   "fontColorTitle":{
     "message": "Click to change forecolor"
+  },
+  "ativarCampo":{
+    "message": "Enable"
+  },
+  "backgroundColor":{
+     "message": "Background"
+  },
+"high":{
+  "message": "Highlight text"
+  },
+"removeimg":{
+  "message":"Remove all images (almost)"
+  },
+"iniciofim":{
+  "message":"Button to up and down"
+  },
+"salva":{
+  "message":"Save"
+  },
+"reset":{
+  "message":"Reset options"
   }
 }

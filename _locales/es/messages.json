@@ -5,8 +5,7 @@
   },
   "appDesc": {
     "message": "Extensión para mejorar la accesibilidad de cualquier sitio.",
-    "description":"Extensión orientada a las personas con baja visión, ceguera al color o cualquier problema que dificulta la visibilidad de un sitio web.
-La extensión ajusta suministros, fondo, imágenes para que sea lo que configura la pantalla de opciones"
+    "description":"Extensión orientada a las personas con baja visión, ceguera al color o cualquier problema que dificulta la visibilidad de un sitio web. La extensión ajusta suministros, fondo, imágenes para que sea lo que configura la pantalla de opciones"
   },
   "fontSize":{
         "message": "Font Size"
@@ -17,6 +16,26 @@ La extensión ajusta suministros, fondo, imágenes para que sea lo que configura
   ,
   "fontColorTitle":{
     "message": "Clic para cambiar el color de la fuente"
-  }
-
+  },
+  "ativarCampo":{
+    "message": "Activa"
+  },
+  "backgroundColor":{
+     "message": "Background"
+  },
+"high":{
+  "message": "Highlight text"
+},
+"removeimg":{
+  "message":"Remove las imagénes"
+},
+"iniciofim":{
+  "message":"Botón de inicio y fin"
+},
+"salva":{
+  "message":"Salva"
+},
+"reset":{
+  "message":"Reiniciar opciones"
+}
 }

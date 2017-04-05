@@ -1,20 +1,47 @@
 {
-  "appName": {
-    "message": "Acessibilidade para todos",
-    "description": "Extensao que transforma sites comuns em acessiveis seguindo diretrizes do W3C."
-  },
-  "appDesc": {
-    "message": "Extensao para melhorar a acessibilidade de qualquer site.",
-    "description":"Extensão voltada para pessoas com baixa visão, daltônicos ou qualquer problema que dificulte a visibilidade de um site.
-A extensão configura fontes, background, imagens para que fique conforme você configurar na tela de opções.."
-  },
-    "fontSize":{
+    "appName": {
+        "message": "Acessibilidade para todos",
+        "description": "Extensao que transforma sites comuns em acessiveis seguindo diretrizes do W3C."
+    },
+    "appDesc": {
+        "message": "Extensao para melhorar a acessibilidade de qualquer site.",
+        "description": "Extensão voltada para pessoas com baixa visão, daltônicos ou qualquer problema que dificulte a visibilidade de um site. A extensão configura fontes, background, imagens para que fique conforme você configurar na tela de opções.."
+    },
+    "fontSize": {
         "message": "Tamanho dos textos"
-  },
-  "fontColor":{
-        "message":"Cor da Fonte"
-  },
-    "fontColorTitle":{
-    "message": "Clique para mudar a cor"
-  }
+    },
+    "fontColor": {
+        "message": "Cor da Fonte"
+    },
+    "fontColorTitle": {
+        "message": "Clique para mudar a cor"
+    },
+    "ativarCampo": {
+        "message": "Ativar"
+    },
+    "backgroundColor": {
+        "message": "Cor do fundo"
+    },
+    "high": {
+        "message": "Cor do texto Selecionado"
+    },
+    "removeimg": {
+        "message": "Remover todas as imagens"
+    },
+    "iniciofim": {
+        "message": "Botão de Inicio e fim da página"
+    },
+    "salva": {
+        "message": "Salvar"
+    },
+    "reset": {
+        "message": "Restaurar Opções"
+    },
+    "sobe": {
+        "message": "Início"
+    },
+    "desce": {
+        "message": "Fim"
+    }
+
 }
