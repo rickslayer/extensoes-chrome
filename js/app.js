@@ -1,8 +1,6 @@
 $(document).ready(function() {
-
+    console.log("Você está usando a Extensão do google Chrome Acessibilidade para todos para saber mais vá para :https://chrome.google.com/webstore/detail/acessibilidade-para-todos/kogiphidhjidpanlffhebomjlhhfggbl");
     restore_options();
-
-
 });
 
 function restore_options() {
@@ -17,7 +15,8 @@ function restore_options() {
         ativaBotaSobe: true,
         ativaCorFundo: false,
         corFonteSelecionada: '#FFFFFF',
-        corFundoSelecionado: '#000000'
+        corFundoSelecionado: '#000000',
+        trocaImagem: ""
     }, function(items) {
         _corFonte = items.corFonte;
         _corBack = items.corBack;
@@ -30,13 +29,16 @@ function restore_options() {
         _ativaCorFundo = items.ativaCorFundo;
         _corFonteSelecionada = items.corFonteSelecionada;
         _corFundoSelecionado = items.corFundoSelecionado;
+        _trocaImagem = items.trocaImagem;
 
+        // item que remove todas as imagens da página
         if (_removeImagem) {
             var img = $(document).find('img');
             var frame = $(document).find('iframe');
 
             img.removeAttr('src');
             frame.removeAttr('src');
+            img.removeAttr('srcset');
             $(window).on("scroll", function() {
 
                 var img = $(document).find('img');
@@ -47,6 +49,38 @@ function restore_options() {
 
         }
 
+        //item que troca as imagens por gatos ou cachorros
+        if (!_removeImagem) {
+            if (_trocaImagem.length > 1) {
+                if (_trocaImagem == "cats") {
+                    var img = $(document).find('img');
+                    img.removeAttr('src');
+                    img.removeAttr('srcset');
+                    img.attr('src', 'https://rickslayer.github.io/img/cat.jpg');
+
+                    $(window).on("scroll", function() {
+                        var img = $(document).find('img');
+                        img.removeAttr('src');
+                        img.removeAttr('srcset');
+                        img.attr('src', 'https://rickslayer.github.io/img/cat.jpg');
+                    });
+                }
+                if (_trocaImagem == "dogs") {
+                    var img = $(document).find('img');
+                    img.removeAttr('src');
+                    img.removeAttr('srcset');
+                    img.attr('src', 'https://rickslayer.github.io/img/dog.jpg');
+
+                    $(window).on("scroll", function() {
+                        var img = $(document).find('img');
+                        img.removeAttr('src');
+                        img.removeAttr('srcset');
+                        img.attr('src', 'https://rickslayer.github.io/img/dog.jpg');
+                    });
+                }
+
+            }
+        }
         ativaCorFundo(_ativaCorFundo, _corFonteSelecionada, _corFundoSelecionado);
 
         ativaBotaSobe(_ativaBotaSobe);

@@ -42,6 +42,9 @@
     },
     "desce": {
         "message": "Fim"
+    },
+    "trocaimagem": {
+        "message": "Trocar Imagem por"
     }
 
 }
